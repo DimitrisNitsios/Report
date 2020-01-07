@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta charset="UTF-8">
+    <title>Research</title>
+    <script defer src="researchscript.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body onload="loadBoxes()">
+<div class="box">
+    <p>
+    <h3>Select foods that you disliked when you were younger</h3>
+    <p>
+    <h3>Or type 3 of them in the text box down below</h3>
+</div>
+<div style="text-align: center" id="result"></div>
+
+<br>
+<div class="box" id="box1">
+    <table>
+        <tr>
+            <th>
+                <input type="checkbox" id="broccoli" name="check_1" value="check_1">
+                <label for="broccoli">Broccoli</label>
+            </th>
+            <th>
+                <input type="checkbox" id="beans" name="check_2" value="check_2">
+                <label for="beans">Beans</label>
+            </th>
+            <th>
+                <input type="checkbox" id="eggplant" name="check_3" value="check_3">
+                <label for="eggplant">Eggplant</label>
+            </th>
+            <th>
+                <input type="checkbox" id="fish" name="check_4" value="check_4">
+                <label for="fish">Fish</label>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="mushrooms" name="check_1" value="check_1">
+                <label for="mushrooms">Mushrooms</label>
+            </th>
+            <th>
+                <input type="checkbox" id="cheese" name="check_2" value="check_2">
+                <label for="cheese">Cheese</label>
+            </th>
+            <th>
+                <input type="checkbox" id="spinash" name="check_3" value="check_3">
+                <label for="spinash">Spinach</label>
+            </th>
+            <th>
+                <input type="checkbox" id="pasta" name="check_4" value="check_4">
+                <label for="pasta">Pasta</label>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="checkbox" id="avocado" name="check_1" value="check_1">
+                <label for="avocado">Avocado</label>
+            </th>
+            <th>
+                <input type="checkbox" id="yogurt" name="check_2" value="check_2">
+                <label for="yogurt">Yogurt</label>
+            </th>
+            <th>
+                <input type="checkbox" id="chicken" name="check_3" value="check_3">
+                <label for="chicken">Chicken</label>
+            </th>
+            <th>
+                <input type="checkbox" id="beef" name="check_4" value="check_4">
+                <label for="beef">Beef</label>
+            </th>
+        </tr>
+    </table>
+    <form onsubmit="submitChoices(); return false;">
+        <input type="submit" value="Submit your choices">
+    </form>
+</div>
+<br>
+<br>
+<div class="box" id="box2">
+    <form onsubmit="submitText(); return false;">
+        <br>
+        Food 1:<br>
+        <input type="text" name="first">
+        <br>
+        Food 2:<br>
+        <input type="text" name="second">
+        <br>
+        Food 3:<br>
+        <input type="text" name="third">
+        <br><br>
+        <input type="submit" value="Submit your choices">
+    </form>
+</div>
+
+</body>
+</html>

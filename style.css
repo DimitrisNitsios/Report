@@ -1,0 +1,49 @@
+.box{
+    text-align: center;
+    background-color: antiquewhite;
+    padding:5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+}
+table{
+    font-size: 95%;
+    margin: auto;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+input[type="checkbox"]:checked + label {
+    border: 1px solid white;
+    color: white;
+    background-color: royalblue;
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 5px;
+}
+
+h3 {
+    color: brown;
+}
+
+#result {
+    color: darkblue;
+    font-size: 18px;
+}
