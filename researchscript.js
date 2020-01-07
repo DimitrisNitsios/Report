@@ -13,10 +13,10 @@ function loadBoxes() {
 
 function submitChoices() {
     let time = (Date.now() - startClock) / 1000.0;
-    document.getElementById("result").innerText = time + " Seconds and used method 1";
+    document.getElementById("result").innerText = time + " Seconds and used method of recognising";
 }
 
 function submitText() {
     let time = (Date.now() - startClock) / 1000.0;
-    document.getElementById("result").innerText = time + " Seconds and used method 2";
+    document.getElementById("result").innerText = time + " Seconds and used method of recalling from memory";
 }
